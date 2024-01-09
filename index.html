@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>facebook demo</title>
+</head>
+<body>
+    <!-- main-div -->
+    <div class="main">
+        <!-- inner-div  -->
+        <div class="inner-div">
+            <!-- left-div -->
+            <div class="left">
+                <img class="fb-logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+                <p>Facebook helps you connect and share with the people in your life.</p>
+            </div>
+            <!-- right-div  -->
+            <div class="right">
+                <div class="login-div">
+                    <div class="form">
+                        <form action="">
+                            <input type="email" placeholder="Email address or phone number" class="login-input">
+                            <input type="Password" placeholder="Password" class="login-input">
+                            <input type="submit" value="Log in" class="login-btn">
+                            <a href="./forgot.html">Forgotten password?</a>
+                        </form>
+                    </div>
+                    <button type="button" onclick=signUpForm()>Create new account </button>
+                </div>
+                <div>
+                    <p><span>Create a Page</span> for a celebrity, brand or business.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- signup form  -->
+        <div id="main">
+            <div class="signup-main">
+                <div class="signup-div">
+                    <div class="signup-text">
+                        <div class="text">
+                                Sign Up
+                            <p>It's quick and easy. </p>
+                        </div>
+                        <i onclick=closeForm() class="fa fa-xmark"></i>
+                    </div>
+                    <div class="form-div">
+                        <form action="">
+                            <div class="name">
+                                <input type="text" placeholder="First name">
+                                <input type="text" placeholder="Surname">
+                            </div>
+                            <div class="email">
+                                <input type= "text" placeholder="Mobile number or email address">
+                                <input type="password" placeholder="New password">
+                            </div>
+                            <div class="date-of-birth">
+                                <!-- first-row -->
+                                <div class="date-title">
+                                    <p>Date of birth</p>
+                                </div>
+                                <!-- options -->
+                                <div class="date-options">
+                                    <select name="day" id="">
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+                                        <option value="7"> 7 </option>
+                                        <option value="8"> 8 </option>
+                                        <option value="9"> 9 </option>
+                                        <option value="10">10 </option>
+                                        <option value="11">11 </option>
+                                        <option value="12">12 </option>
+                                    </select>
+                                    <select name="month" id="">
+                                        <option value="Jan">Jan</option>
+                                        <option value="Feb">Feb</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="Aug">Aug</option>
+                                        <option value="Sep">Sep</option>
+                                        <option value="Oct">Oct</option>
+                                        <option value="Nov">Nov</option>
+                                        <option value="Dec">Dec</option>
+                                    </select>
+                                    <select name="year" id="">
+                                        <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Gender  -->
+                            <div class="gender">
+                                <div class="gender-title">
+                                    <p>Gender</p>
+                                </div>
+                                <div class="gender-options">
+                                    <div class="female" onclick=hideCustom()>
+                                        <label for="female" onclick=hideCustom()>Female</label>
+                                        <input type="radio" id="female" value="Female" name="gender" onclick=hideCustom()>
+                                    </div>
+                                   <div class="male" >
+                                        <label for="male" onclick=hideCustom()>Male</label>
+                                        <input type="radio" value="Male" id="male" name="gender" onclick=hideCustom()>
+                                   </div>
+                                   <div class="custom" >
+                                       <label for="custom" onclick=showCustom()>Custom</label>
+                                    <input type="radio" value="Custom" for="custom" name="gender" onclick=showCustom()>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="custom-main">
+                                <div class="custom-class">
+                                    <select name="pronoun" id="">
+                                        <option value="">She:"Wish her a happy birthday!"</option>
+                                        <option value="">He:"Wish him a happy birthday!"</option>
+                                        <option value="">They:"Wish them a happy birthday!"</option>
+                                    </select>
+                                    <p>your pronoun is visible to everyone.</p>
+                                    <input type="text" placeholder="Gender(optional)">
+                    
+                                </div>
+                            </div>
+                            
+                            <div class="instruction">
+                                <div>
+                                    <p>
+                                        People who use over our services may have uploaded your contact information to facebook.
+                                        <a href="">learn more</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>By clicking Sign Up, you agree to our <a href="">Terms</a> <a href="">Privacy Policy</a>and <a href="">Cookies Policy.</a><br>You may receive SMS notifications from us and can opt out at any time.</p>
+                                </div>
+                            </div>
+                            <div class="sign-up-button">
+                            <button type="button">Sign Up</button>
+                         </div>
+    
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    <!-- footer  -->
+    <footer>
+        <div class="footer">
+            <div class="english">
+                <a href="">English (UK)</a>
+                <a href="">اردو</a>
+                <a href="">پښتو</a>
+                <a href="">العربية</a>
+                <a href=""> हिन्दी</a>
+                <a href="">বাংলা </a>
+                <a href=""> ਪੰਜਾਬੀ</a>
+                <a href=""> فارسی </a>
+                <a href="">ગુજરાતી </a>
+                <a href=""> Deutsch</a>
+                <a href="">Español</a>
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="signup">
+                <a href="">SignUp</a> 
+                <a href="">Login</a> 
+                <a href="">Messenger/a>
+                <a href="">FacebookLite</a>
+                <a href="">Video</a>
+                <a href="">Places</a>            
+                <a href="">Games</a>           
+                <a href="">Marketplace</a>
+                <a href="">Meta Pay </a>              
+                <a href="">Meta Store</a>               
+                <a href="">Meta Quest</a>               
+                <a href="">Instagram </a>  
+                <a href="">Threads</a>             
+                <a href="">Fundraisers</a>
+            </div>
+            <div class="services">
+                <a href="">ServicesVoting </a>              
+                <a href="">Information Centre</a>
+                <a href="">Privacy Policy</a>           
+                <a href=""> Privacy Centre</a>              
+                <a href="">Groups</a>     
+                <a href="">About</a>    
+                <a href="">Create ad</a>        
+                <a href="">Create Page</a>          
+                <a href="">Developers</a>        
+                <a href="">Careers</a>      
+                <a href="">Cookies </a>      
+                <a href="">AdChoices</a>    
+            </div>
+            <div class="terms">
+                <a href="">Terms</a>
+                <a href="">Help</a>
+                <a href="">Contactuploading and non-users</a>
+            </div>
+        </div>
+       
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

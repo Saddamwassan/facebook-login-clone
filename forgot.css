@@ -1,0 +1,151 @@
+/* forgotpassword-page  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;;
+}
+.main{
+    height: 100vh;
+    width:100%;
+}
+/* header  */
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+/* left  */
+.fb-logo{
+    width: 154px;
+}
+/* right */
+.right{
+    width: 42%;
+    display: flex;
+    gap:10px;
+}
+.right input{
+    padding:10px;
+    border-radius: 5px;
+    border:1px solid #e5e7eacb;
+}
+.login-btn{
+    background-color:#1B74E3 ;
+    color:white;
+    width:10%;
+}
+.right p{
+    color:#286FDB;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    font-size:13px;
+}
+.right p:hover{
+    text-decoration:underline;
+}
+/* content  */
+.content{
+    background-color: #F0F2F5;
+    width:100%;
+    height:60%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner{
+    background-color: white;
+    width:32%;
+    border-radius:5px;
+}
+/* top  */
+.top{
+   display:flex;
+   width:100%;
+   margin-inline:auto;
+   padding: 17px 0;
+   font-size: 20px;
+   font-weight: bold;
+   border-bottom: 1px solid #EBECEE;
+}
+.top p{
+    padding:0 16px;
+}
+.middle{
+    display:flex;
+    flex-direction: column;
+    gap:17px;
+    padding: 17px 0;
+    border-bottom: 1px solid #EBECEE;
+}
+.middle input{
+    padding:16px; 
+    margin:0 16px;
+    border-radius:5px;
+    border:1px solid;
+    font-size:16px;
+    border:1px solid #EBECEE;
+}
+.middle input:focus{
+    outline: 1px solid #EBECEE;
+}
+.middle p{
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    margin:0 16px;
+}
+.bottom{
+    display:flex;
+    justify-content: flex-end;
+    padding:10px;
+    gap: 10px;
+}
+.cancel{
+    background-color: #E4E6EB;
+    padding:5px;
+    height:35px;
+    color:#4B4F56;
+    border-radius:5px;
+    text-decoration: none;
+    font-weight:bold;
+    width:20%;
+    border:none;
+    font-size:15px;
+}
+.search{
+    background-color: #286FDB;
+    padding:5px;
+    color:white;
+    border-radius:5px;
+    font-weight:bold;
+    width:20%;
+    border:none;
+    font-size:15px;
+}
+/* footer  */
+footer{
+    display:flex;
+    justify-content: center;
+    position:fixed;
+    width: 100%;
+    /* top:0; */
+    bottom:0;
+}
+.footer{
+    width: 66%;
+    padding:10px;
+}
+.footer a{
+    text-decoration:none;
+    color:#8A8D9F;
+    font-size:12px;
+    font-family:SFProText-Semibold, Helvetica, Arial, sans-serif;
+    margin:0 10px 0 0;
+}
+.footer a:hover{
+text-decoration:underline
+}
+.english{
+    border-bottom: 1px solid grey;
+    margin:0 0 10px 0;
+}
