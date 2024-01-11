@@ -17,7 +17,7 @@ align-items: center;
 }
 /* left  */
 .fb-logo{
-    width: 154px;
+    width: 150px;
 }
 /* right */
 .right{
@@ -29,34 +29,38 @@ align-items: center;
     padding:10px;
     border-radius: 5px;
     border:1px solid #e5e7eacb;
+    font-size: 15px;
+
 }
 .login-btn{
     background-color:#1B74E3 ;
     color:white;
     width:10%;
+    font-size: 16px;
+    font-weight: bold;
 }
 .right p{
     color:#286FDB;
     text-decoration:none;
     display:flex;
     align-items:center;
-    font-size:13px;
+    font-size:15px;
 }
 .right p:hover{
     text-decoration:underline;
 }
 /* content  */
 .content{
-    background-color: #F0F2F5;
+    background-color: #E9EBEE;
     width:100%;
-    height:60%;
+    height:62%;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 .inner{
     background-color: white;
-    width:32%;
+    width:33%;
     border-radius:5px;
 }
 /* top  */
@@ -64,7 +68,7 @@ align-items: center;
    display:flex;
    width:100%;
    margin-inline:auto;
-   padding: 17px 0;
+   padding: 18px 0;
    font-size: 20px;
    font-weight: bold;
    border-bottom: 1px solid #EBECEE;
@@ -93,11 +97,12 @@ align-items: center;
 .middle p{
     font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
     margin:0 16px;
+    font-size: 17px;
 }
 .bottom{
     display:flex;
     justify-content: flex-end;
-    padding:10px;
+    padding: 17px 10PX;
     gap: 10px;
 }
 .cancel{
@@ -125,27 +130,51 @@ align-items: center;
 /* footer  */
 footer{
     display:flex;
-    justify-content: center;
-    position:fixed;
-    width: 100%;
-    /* top:0; */
-    bottom:0;
+    flex-direction: column;
+    align-items: center;
+    height: 326px;
+    justify-content: flex-end;
+    padding-bottom: 10px;
 }
 .footer{
-    width: 66%;
+    width: 1000px;
     padding:10px;
+    line-height: 20px;
+    font-size:15px;
+    font-family: Helvetica, Arial, sans-serif;
+    
 }
 .footer a{
     text-decoration:none;
     color:#8A8D9F;
     font-size:12px;
-    font-family:SFProText-Semibold, Helvetica, Arial, sans-serif;
-    margin:0 10px 0 0;
+    /* margin:0 10px 0 0; */
 }
 .footer a:hover{
 text-decoration:underline
 }
 .english{
-    border-bottom: 1px solid grey;
-    margin:0 0 10px 0;
+    border-bottom: 1px solid #F0F2F5;
+    margin: 0 0 7px 0;
+    padding: 15px 0 5px 0;
+    display:flex;
+    gap:15px;
 }
+.signup, .services, .terms{
+    display:flex;
+    gap:20px;
+}
+.meta{
+  margin-top: 14px;
+}
+.meta a{
+  font-size:11px;
+
+}
+/* 27
+22
+51 input 
+16 
+69 */
+/* 275 height  */
+/* 502 width  */
