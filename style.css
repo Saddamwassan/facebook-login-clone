@@ -9,20 +9,14 @@
     background-color: #F0F2F5;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     height: 700px;
     padding: 128px 0 0 0;
-}
-/* inner-div */
-.inner-div {
- 
-    /* width: 1100px; */
+    gap:78px;
     width:100%;
-    display: flex;
-    justify-content: space-around;
     margin: 0 20px 0 0;
     
 }
+
 /* right-div  */
 .right{
     display: flex;
@@ -128,12 +122,8 @@ hr{
 }
 /* left-div  */
 .left{
-    width: 514px;
-    height: 240px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
+    width: 515px;
+    padding: 47px 10px 0 0;
 }
 .left p {
     font-family:Helvetica, Arial, sans-serif;
@@ -149,29 +139,22 @@ hr{
 /* footer  */
 footer{
     display:flex;
+    flex-direction: column;
     justify-content: center;
-    height: 180px;
-    /* width:100%; */
-    /* margin-inline:auto; */
-}
-.footer{
-    /* width: 1000px; */
     padding:10px;
     line-height: 20px;
     font-size:15px;
     font-family: Helvetica, Arial, sans-serif;
-    /* width: 100%; */
-    /* width:50%;
-    margin-inline:auto; */
-    
-}
-.footer a{
+    width:67%; 
+    margin-inline:auto;
+} 
+footer a{
     text-decoration:none;
     color:#8A8D9F;
     font-size:12px;
     /* margin:0 10px 0 0; */
 }
-.footer a:hover{
+footer a:hover{
 text-decoration:underline
 }
 .english{
@@ -181,9 +164,10 @@ text-decoration:underline
     display:flex;
     gap:15px;
 }
-.signup, .services, .terms{
+.signup{
     display:flex;
-    gap:20px;
+    flex-wrap:wrap;
+    gap:13px;
 }
 .meta{
     margin-top: 10px;
@@ -393,7 +377,7 @@ background-color: #F5F6F7;
 .mob-header{
     display: flex;
     background-color: #FFFBE2;
-    height: 52px;
+    height: 47px;
     align-items: center;
     gap: 10px;
     padding-left: 10px;
@@ -401,13 +385,18 @@ background-color: #F5F6F7;
 .mob-header i{
     font-size:25px;
 }
+.mob-header p{
+    font-size: 14px;
+    color:#3B5998;
+}
 .mob-facebook-logo{
     display: flex;
     justify-content: center;
     width:100%;
+    padding-top: 10px
 }
 .mob-fb-logo{
-    width:125px;
+    width:114px;
 }
 /* inner  */
 .mob-inner{
@@ -418,13 +407,13 @@ background-color: #F5F6F7;
 }
 /* input  */
 .mob-form{
-    width:50%;
+    width:94%;
     margin-inline:auto;
     text-align: center;
     margin-bottom: 20px;
 }
 .mob-login-input{
-    padding:15px;
+    padding:12px;
     margin:5px;
     border-radius:5px;
     border:1px solid #EBECEE;
@@ -432,15 +421,16 @@ background-color: #F5F6F7;
     width: 96%;
     margin-inline: auto;
     color:black;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-family:Helvetica, Arial, sans-serif;
+    background-color: #F5F6F7;
 }
 .mob-login-input:focus {
     outline:1px solid #1B74E4;
 }
 .mob-login-btn{
-    padding: 13px;
-    border-radius: 7px;
+    padding: 10px;
+    border-radius: 5px;
     background-color: #1877F2;
     text-decoration: none;
     color: white;
@@ -458,15 +448,16 @@ background-color: #F5F6F7;
     text-align: center;
     justify-content: center;
     color: #1877F2;
-    margin: 30px 0 0 0;
+    /* margin: 30px 0 0 0; */
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
+    padding-top: 4px;
 }
 /* or  */
 .or{
     display:flex;
-    width:100%;
+    width:88%;
     justify-content: center;
 }
 .or hr{
@@ -477,7 +468,7 @@ background-color: #F5F6F7;
 /* create-button  */
 .create-button{
     padding:10px;
-    width:50%;
+    width:70%;
     background-color: white;
     border-radius:3px;
     border:1px solid #959697;
@@ -487,7 +478,7 @@ background-color: #F5F6F7;
     display: flex;
     justify-content: space-between;
     width:58%;
-    margin-top: 66px;
+    margin-top: 101px;
 }
 .mob-lang a{
     font-size:12px;
@@ -522,28 +513,32 @@ background-color: #F5F6F7;
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0 29px 0;
 }
 .mob-footer a{
     font-size:12px;
     text-decoration:none;
     color:#90949C;
 }
+.about{
+    padding-bottom:10px;
+}
 .mob-meta{
 
 }
 @media(max-width:445px){
     .mob-form {
-        width: 437px;
+        width: 94%;
     }
 }
 
 /* mobile-view login form  */
-@media(max-width:768px){
+@media(max-width:767px){
     .desktop{
         display: none;
     }
 }
-@media(min-width:769px){
+@media(min-width:768px){
     .mob-main{
         display: none;
     }
@@ -553,3 +548,61 @@ background-color: #F5F6F7;
         width: 1100px;
     }
 }
+/* login-form for tablets  */
+@media(max-width:1024px){
+
+    .main{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2px;
+    }
+    .fb-logo{
+        width: 321px;
+    }
+footer{
+    width:95%;
+    margin-inline: auto;
+    display:flex;
+    flex-direction: column;
+    padding:10px 0;
+
+}
+footer a{
+    font-size:12px;
+}
+.english{
+    margin-bottom:14px;
+}
+.signup{
+    line-height: 8px;
+}
+.inner-div{
+}
+.left{
+    width: 368px;
+    box-sizing:border-box;
+    margin:0;
+    padding:0 0 37px 10px;
+    
+}
+.left p{
+    font-size:22px;
+    margin:0;
+}
+}
+
+/* login-form for galaxy fold 280px */
+@media (max-width:280px){
+    .mob-login-input{
+        font-size: 14px;
+    }
+    .mob-login-btn {
+        padding:8px;
+        font-size: 17px;
+    }
+}
+

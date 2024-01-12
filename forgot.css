@@ -13,7 +13,7 @@
 header{
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items: center;    
 }
 /* left  */
 .fb-logo{
@@ -21,9 +21,9 @@ align-items: center;
 }
 /* right */
 .right{
-    width: 42%;
     display: flex;
     gap:10px;
+    padding: 15px;
 }
 .right input{
     padding:10px;
@@ -35,7 +35,7 @@ align-items: center;
 .login-btn{
     background-color:#1B74E3 ;
     color:white;
-    width:10%;
+    width:70px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -60,7 +60,7 @@ align-items: center;
 }
 .inner{
     background-color: white;
-    width:33%;
+    width:500px;
     border-radius:5px;
 }
 /* top  */
@@ -131,26 +131,22 @@ align-items: center;
 footer{
     display:flex;
     flex-direction: column;
-    align-items: center;
-    height: 326px;
-    justify-content: flex-end;
-    padding-bottom: 10px;
-}
-.footer{
-    width: 1000px;
-    padding:10px;
+    justify-content: center;
+    padding: 151px 0 15px 0;
     line-height: 20px;
     font-size:15px;
     font-family: Helvetica, Arial, sans-serif;
-    
+    width:65%; 
+    margin-inline:auto;
 }
-.footer a{
+
+footer a{
     text-decoration:none;
     color:#8A8D9F;
     font-size:12px;
     /* margin:0 10px 0 0; */
 }
-.footer a:hover{
+footer a:hover{
 text-decoration:underline
 }
 .english{
@@ -160,9 +156,11 @@ text-decoration:underline
     display:flex;
     gap:15px;
 }
-.signup, .services, .terms{
+.signup{
     display:flex;
-    gap:20px;
+    flex-wrap:wrap;
+    gap:13px;
+    line-height: 7px;
 }
 .meta{
   margin-top: 14px;
@@ -171,10 +169,7 @@ text-decoration:underline
   font-size:11px;
 
 }
-/* 27
-22
-51 input 
-16 
-69 */
-/* 275 height  */
-/* 502 width  */
+/* forgot password page  */
+@media(max-width:1024px){
+
+}
