@@ -13,7 +13,8 @@
 header{
 display: flex;
 justify-content: space-between;
-align-items: center;    
+align-items: center; 
+height: 54px;   
 }
 /* left  */
 .fb-logo{
@@ -22,15 +23,16 @@ align-items: center;
 /* right */
 .right{
     display: flex;
-    gap:10px;
-    padding: 15px;
+    gap:7px;
+    padding: 15px 28px 15px 0;
 }
 .right input{
     padding:10px;
     border-radius: 5px;
     border:1px solid #e5e7eacb;
     font-size: 15px;
-
+    margin-right: 5px;
+    outline: none;
 }
 .login-btn{
     background-color:#1B74E3 ;
@@ -53,15 +55,16 @@ align-items: center;
 .content{
     background-color: #E9EBEE;
     width:100%;
-    height:62%;
     display:flex;
     align-items: center;
     justify-content: center;
+    padding: 80px 0;
 }
 .inner{
     background-color: white;
     width:500px;
-    border-radius:5px;
+    border-radius:7px;
+    box-shadow: 0 0 5px  #cfd1d1;
 }
 /* top  */
 .top{
@@ -102,28 +105,26 @@ align-items: center;
 .bottom{
     display:flex;
     justify-content: flex-end;
-    padding: 17px 10PX;
+    padding: 17px 16PX;
     gap: 10px;
 }
 .cancel{
     background-color: #E4E6EB;
-    padding:5px;
+    padding: 5px 20px;
     height:35px;
     color:#4B4F56;
     border-radius:5px;
     text-decoration: none;
     font-weight:bold;
-    width:20%;
     border:none;
     font-size:15px;
 }
 .search{
     background-color: #286FDB;
-    padding:5px;
+    padding: 5px 20px;
     color:white;
     border-radius:5px;
     font-weight:bold;
-    width:20%;
     border:none;
     font-size:15px;
 }
@@ -132,14 +133,13 @@ footer{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding: 151px 0 15px 0;
+    padding: 165px 10px 10px 0;
     line-height: 20px;
     font-size:15px;
     font-family: Helvetica, Arial, sans-serif;
-    width:65%; 
+    width:64%; 
     margin-inline:auto;
-}
-
+} 
 footer a{
     text-decoration:none;
     color:#8A8D9F;
@@ -152,24 +152,99 @@ text-decoration:underline
 .english{
     border-bottom: 1px solid #F0F2F5;
     margin: 0 0 7px 0;
-    padding: 15px 0 5px 0;
+    padding: 15px 0 8px 0;
     display:flex;
     gap:15px;
 }
 .signup{
     display:flex;
     flex-wrap:wrap;
-    gap:13px;
-    line-height: 7px;
+    gap:18px;
+    line-height: 1px;
+    padding-top: 7px;
 }
 .meta{
-  margin-top: 14px;
+    margin-top: 17px;
 }
 .meta a{
   font-size:11px;
-
 }
 /* forgot password page  */
-@media(max-width:1024px){
-
+@media(min-width:1053px){
+footer{
+    width:950px;
 }
+}
+/* for header  */
+@media(max-width:790px) and (min-width:769px){
+    .right input {
+        padding: 6px;
+    }
+}
+/* for tablets  */
+@media(max-width:768px) and (min-width:510px){
+    .input, .right p{
+        display: none;
+    }
+    .right{
+        padding: 15px 7px 15px 0;
+    }
+    footer{
+        width:87%;
+    }
+    .english{
+        gap:10px;
+    }
+}
+/* for mobile  */
+@media(max-width:510px) and (min-width:280px){
+    /* header  */
+    .input, .right p{
+        display: none;
+    }
+    .right{
+        padding: 15px 7px 15px 0;
+    }
+    .right input {
+        padding: 7px;
+        font-size: 13px;
+        width: 62px;
+    }
+    .fb-logo {
+        width: 125px;
+    }
+    /* content  */
+    .content{
+        padding: 80px 10px;
+    }
+    .top p {
+        font-size:17px;
+        }
+    .middle p{
+        font-size: 13px;
+    }
+    .middle input {
+        padding: 8px;
+        font-size: 13px;
+    }
+    .cancel {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .search {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    /* footer  */
+    footer{
+        width:87%;
+        padding: 70px 10px 10px 0;
+    }
+    footer a{
+        font-size:10px;
+    }
+    .english{
+        flex-wrap:wrap;
+        gap:10px;
+    }
+}   

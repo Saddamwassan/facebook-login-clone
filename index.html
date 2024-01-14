@@ -43,7 +43,7 @@
                                 Sign Up
                             <p>It's quick and easy. </p>
                         </div>
-                        <i onclick=closeForm() class="fa fa-xmark"></i>
+                        <i onclick=closeForm() class="fa-solid fa-xmark"></i>
                     </div>
                     <div class="form-div">
                         <form action="">
@@ -210,10 +210,12 @@
     </div>
     <!-- mobile-view  -->
     <div class="mob-main">
-        <div class="mob-header">
-            <i class="fa-solid fa-mobile"></i>
-            <p>Get Facebook for Android and browse faster.</p>
-        </div>
+        <!-- header  -->
+    <div class="mob-header">
+        <i class="fa-solid fa-mobile"></i>
+        <p>Get Facebook for Android and browse faster.</p>
+    </div>
+    <div class="mob-outer">
         <div class="mob-inner">
             <div class="mob-facebook-logo">
                 <img class="mob-fb-logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
@@ -222,32 +224,35 @@
             <input type="text" placeholder="Mobile number or email address" class="mob-login-input">
             <input type="password" placeholder="Password" class="mob-login-input">
             <input type="submit" value="Log in"class="mob-login-btn">
-            <a href="">Forgotten password?</a>
+            <a href="./mob-forget.html">Forgotten password?</a>
             </div>
             <div class="or">
                 <hr>or <hr>
             </div>
             <!-- create button  -->
-            <button class="create-button">
-                Create new account
-            </button>
-            <div class="mob-lang">
-                <div class="mob-eng">
-                    <a href="">English (UK)</a>
-                    <a href="">پښتو</a>
-                    <a href=""> हिन्दी</a>
-                    <a href=""> Español</a>
-                </div>
-                <div class="mob-urdu">
-                    <a href="">اردو</a>
-                    <a href="">العربية</a>
-                    <a href="">বাংলা </a>
-                    <div class="plus">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
+            <div class="button">
+                <a href="./mob-createPage.html">
+                    <button class="create-button" >
+                        Create new account
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="mob-lang">
+            <div class="mob-eng">
+                <a href="">English (UK)</a>
+                <a href="">پښتو</a>
+                <a href=""> हिन्दी</a>
+                <a href=""> Español</a>
+            </div>
+            <div class="mob-urdu">
+                <a href="">اردو</a>
+                <a href="">العربية</a>
+                <a href="">বাংলা </a>
+                <div class="plus">
+                    <i class="fa-solid fa-plus"></i>
                 </div>
             </div>
-
         </div>
         <div class="mob-footer">
             <div class="about">
@@ -260,6 +265,8 @@
             </div>
         </div>
     </div>
+    </div>
+    
 <script src="script.js"></script>
 </body>
 </html>

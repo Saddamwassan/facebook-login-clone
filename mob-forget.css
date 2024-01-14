@@ -1,0 +1,90 @@
+/* mob-forgotpassword-page  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;;
+}
+/* header  */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0 6px 0;
+}
+.mob-fb-logo{
+    width: 116px;
+}
+hr{
+    border-bottom: 1px solid #F5F6F7;
+    height: 3px;
+}
+/* content  */
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding-top: 17px;
+}
+/* mobile number  */
+.mob-number{
+    width:93%;
+    margin-inline:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.mob-number p{
+    font-size:16px;
+    font-weight: bold;
+}
+input{
+    padding:11px;
+    width:100%;
+    border-radius: 4px;
+    background-color: #F5F6F7;
+    border:none;
+    box-shadow: 0 -1px 2px #b1b2b3;
+}
+input:focus{
+    outline:1px solid black;
+}
+/* button  */
+.button{
+    display: flex;
+    width:93%;
+    margin-inline:auto;
+    gap: 6px;
+}
+.cancel,.search{
+    padding:9px;
+    margin-inline:auto;
+    gap:2px;
+    border-radius:3px;
+    width:100%;
+    font-weight: bold;
+    font-size:14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.cancel{
+    background-color: white;
+    color:#1877F2;
+    border:1px solid #1877F2;
+}
+.search{
+    background-color: #1877F2;
+    color:white;
+    border:none;
+}
+.text{
+    color:#1877F2;
+    font-size: 14px;
+}
+@media(max-width:294px){
+    .text{
+        text-align: center;
+    }
+}
